@@ -47,7 +47,7 @@ export default {
   },
   methods: {
     getWeatherData(){
-      this.axios.get("http://api.apixu.com/v1/current.json?key=98af7291b63744a3a1830307180805&q="+this.city).then((response) => {
+      this.axios.get("https://api.apixu.com/v1/current.json?key=98af7291b63744a3a1830307180805&q="+this.city).then((response) => {
         console.log(response.data);
         this.results = response.data;
         this.prov = this.results.location.region;
